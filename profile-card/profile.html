@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+  <div class="profile-card" id="profile-card">
+    <!-- Edit/Save button -->
+    <i class="fas fa-edit edit-btn" id="toggle-edit"></i>
+
+    <!-- Profile image -->
+    <div class="profile-img-container">
+      <label for="file-input">
+        <div id="profile-img" class="profile-img">
+          <i class="fas fa-user"></i>
+        </div>
+      </label>
+      <input type="file" id="file-input" accept="image/*">
+    </div>
+
+    <!-- Edit input-->
+    <input type="text" id="profile-name" class="input-field" value="Chinmaya" readonly placeholder="Your Name">
+    <input type="text" id="profile-designation" class="input-field" value="Frontend Developer" readonly placeholder="Your Designation">
+    <input type="text" id="profile-bio" class="input-field profile-bio" value="A Web development enthusiastic person." readonly placeholder="About yourself">
+
+    <!-- Social media icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>
